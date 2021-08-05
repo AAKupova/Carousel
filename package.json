@@ -1,0 +1,33 @@
+{
+  "name": "carousel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "*",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-commit": "pretty-quick --staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AAKupova/Carousel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AAKupova/Carousel/issues"
+  },
+  "homepage": "https://github.com/AAKupova/Carousel#readme",
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "pretty-quick": "^3.1.1"
+  }
+}

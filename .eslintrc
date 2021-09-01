@@ -7,5 +7,8 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+  "globals": {
+    "document": true
+  },
   "plugins": ["react"]
 }

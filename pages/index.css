@@ -1,8 +1,13 @@
-body {
-	height: 100%;
+	html,
+	body {
+		height: 100%;
+	}
+
+.root {
 	background-color: #0C1E34;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
+	padding: 0;
 }
 
 
@@ -16,10 +21,10 @@ body {
 	height: 70px;
 	position: absolute;
 	top: 0;
+	z-index: 10;
 	width: 100%;
 	background-color: #0C1E34;
 	border-bottom: 1px solid rgba(245, 163, 2, 0.5);
-	z-index: 10;
 	display: flex;
 	align-items: center;
 }
@@ -45,6 +50,7 @@ body {
 	align-items: center;
 	text-decoration: none;
 	justify-content: space-around;
+	cursor: pointer;
 }
 
 .logo__text {
@@ -52,6 +58,7 @@ body {
 	font-weight: 500;
 	letter-spacing: .3em;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .contacts {
@@ -95,6 +102,7 @@ body {
 	text-align: center;
 	background-color: #033C59;
 	transition: .25s ease-in-out;
+	cursor: pointer;
 }
 
 .button-burger:hover {
@@ -107,4 +115,77 @@ body {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100%;
+}
+
+.sidebar {
+	width: 70px;
+	height: 100%;
+	background-color: #033C59;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+	position: absolute;
+	top: 0;
+}
+
+
+.sidebar__decoration {
+	flex: 1 0 0;
+	background-image: url(../decor.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.sidebar__social {
+	flex: 1 0 0;
+	
+}
+
+.sidebar__share-icon {
+	background-color: #EE8633;
+	background-image: url(../Vector.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	flex: 0 0 70px;
+	transition: .25s ease-in-out;
+	cursor: pointer;
+}
+
+.sidebar__share-icon:hover {
+  background-color: #033C59;
+}
+
+.social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.social__img {
+	opacity: .5;
+	cursor: pointer;
+}
+
+.social__img:hover + .social__item:hover {
+  opacity: 1;
+}
+
+.social__item {
+	width: 100%;
+	height: 60px;
+	margin: -1px 8px 0;
+	display: flex;
+	justify-content: center;
+	border: 1px solid rgba(244, 244, 244, .5);
+	transition: .25s ease-in-out;
+	cursor: pointer;
+}
+
+.social__item:hover {
+  background-color: #EE8633;
 }

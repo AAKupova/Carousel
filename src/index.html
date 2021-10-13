@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Каруселька</title>
-  <link rel="stylesheet" href="./index.css" />
+  <!-- <link rel="stylesheet" href="./index.css" /> -->
 </head>
 
 <body class="root">
   <header class="header">
     <div class="top-line">
       <a  href="https://github.com/AAKupova" class="logo" target='_blank'>
-        <img src="../Logo.svg" />
+        <img src="<%=require('../Logo.svg')%>" />
         <span class="logo__text">Kupova</span>
       </a>
       <span class="top-line__decoration"></span>
@@ -37,13 +37,13 @@
         <div class="sidebar__social">
           <div class="social">
             <a class="social__item" target='_blank' href="#">
-              <img alt='вконтакте' class="social__img" src="../vk.svg"/>
+              <img alt='вконтакте' class="social__img" src="<%=require('../vk.svg')%>" />
             </a>
             <a class="social__item" target='_blank' href="#">
-              <img alt='фейсбук' class="social__img" src="../f.svg"/>
+              <img alt='фейсбук' class="social__img" src="<%=require('../f.svg')%>"/>
             </a>
             <a class="social__item" target='_blank' href="#">
-              <img alt='твиттер' class="social__img" src="../t.svg"/>
+              <img alt='твиттер' class="social__img" src="<%=require('../t.svg')%>"/>
             </a>
           </div>
         </div>
@@ -51,6 +51,5 @@
       </aside>
   </header>
 </body>
-<script src="./src/inedex.js"></script>
 
 </html>

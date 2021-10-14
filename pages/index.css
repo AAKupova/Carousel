@@ -118,7 +118,7 @@
 }
 
 .button-burger__img {
-  background-image: url(../burger.svg);
+  background-image: url(../images/burger.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -141,7 +141,7 @@
 
 .sidebar__decoration {
 	flex: 1 0 0;
-	background-image: url(../decor.svg);
+	background-image: url(../images/decor.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -154,7 +154,7 @@
 
 .sidebar__share-icon {
 	background-color: #FC1012;
-	background-image: url(../Vector.svg);
+	background-image: url(../images/Vector.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -179,7 +179,7 @@
 	cursor: pointer;
 }
 
-.social__img:hover + .social__item:hover {
+.social__item:hover .social__img {
   opacity: 1;
 }
 

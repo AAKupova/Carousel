@@ -10,5 +10,24 @@
   "globals": {
     "document": true
   },
+  "settings": {
+
+    "import/resolver": "webpack"
+  
+      // // "webpack": {
+  
+      // //   "config": "webpack.prod.js"
+  
+      // // },
+      // "node": {
+
+      //   "paths": ["src"]
+
+      // }
+  
+    // }
+  
+  },
+  
   "plugins": ["react"]
 }

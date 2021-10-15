@@ -6,23 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Каруселька</title>
-  <!-- <link rel="stylesheet" href="./index.css" /> -->
 </head>
 
 <body class="root">
   <header class="header">
     <div class="top-line">
-      <a  href="https://github.com/AAKupova" class="logo" target='_blank'>
+      <a href="https://github.com/AAKupova" class="logo" target='_blank'>
         <img src="<%=require('../images/Logo.svg')%>" />
         <span class="logo__text">Kupova</span>
       </a>
       <span class="top-line__decoration"></span>
       <div class="contacts">
-        <!-- <span class="contacts__info">Телефон:</span>
+        <span class="contacts__info">Телефон:</span>
         <span class="contacts__telephone">555-77-77</span>
         <span class="contacts__decoration"></span>
         <span class="contacts__info"> Адрес:</span>
-        <span class="contacts__address">ул. Ленина</span> -->
+        <span class="contacts__address">ул. Ленина</span>
       </div>
       <span class="top-line__decoration"></span>
       <div class="menu-button-container">
@@ -32,37 +31,84 @@
       </div>
     </div>
 
-      <aside class="sidebar">
+    <aside class="sidebar">
+      <div class="sidebar__top">
         <div class="sidebar__decoration"></div>
-        <div class="sidebar__social">
-          <div class="social">
-            <a class="social__item" target='_blank' href="#">
-              <img alt='вконтакте' class="social__img" src="<%=require('../images/vk.svg')%>" />
-            </a>
-            <a class="social__item" target='_blank' href="#">
-              <img alt='фейсбук' class="social__img" src="<%=require('../images/f.svg')%>"/>
-            </a>
-            <a class="social__item" target='_blank' href="#">
-              <img alt='твиттер' class="social__img" src="<%=require('../images/t.svg')%>"/>
-            </a>
-          </div>
-        </div>
-        <div class="sidebar__share-icon"></div>
-        <!-- <div class="slider__share">111</div> -->
-      </aside>
-
-      <div class="slider">
-        <div class="slider__body">123</div>
-
-        <div class="slider__navigation">444</div>
-
-        <div class="slider__footer">
-        <div class="slider__pagination">222</div>
-        <div class="slider__scrollbar">333</div>
+      </div>
+      <div class="sidebar__center">
+        <div class="social sidebar__social">
+          <a class="social__item  social__item_size_s" target='_blank' href="#">
+            <img alt='вконтакте' class="social__img" src="<%=require('../images/vk.svg')%>" />
+          </a>
+          <a class="social__item  social__item_size_s" target='_blank' href="#">
+            <img alt='фейсбук' class="social__img" src="<%=require('../images/f.svg')%>" />
+          </a>
+          <a class="social__item  social__item_size_s" target='_blank' href="#">
+            <img alt='твиттер' class="social__img" src="<%=require('../images/t.svg')%>" />
+          </a>
         </div>
       </div>
+      <div class="sidebar__bottom">
+        <div class="sidebar__share-icon"></div>
+      </div>
+    </aside>
+
+    <div class="slider">
+        <!-- <div class="swiper slider__swiper">
+          <div class="swiper-wrapper slider__swiper-wrapper">
+            <div class="swiper-slide slider__item">
+              <div class="slider__img"></div>
+            </div>
+            <div class="swiper-slide slider__item">
+              <div class="slider__img"></div>
+            </div>
+            <div class="swiper-slide slider__item">
+              <div class="slider__img"></div>
+            </div>
+          </div>
+
+    </div> -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="slider__footer">
+      <div class="slider__share">
+        <div class="social slider__social">
+          <a class="social__item social__item_size_m" target='_blank' href="#">
+            <img alt='вконтакте' class="social__img" src="<%=require('../images/vk.svg')%>" />
+          </a>
+          <a class="social__item social__item_size_m" target='_blank' href="#">
+            <img alt='фейсбук' class="social__img" src="<%=require('../images/f.svg')%>" />
+          </a>
+          <a class="social__item social__item_size_m" target='_blank' href="#">
+            <img alt='твиттер' class="social__img" src="<%=require('../images/t.svg')%>" />
+          </a>
+        </div>
+      </div>
+      <div class="slider__pagination">222</div>
+      <div class="slider__scrollbar">333</div>
+      <div class="slider__navigation">444</div>
+    </div>
+    </div>
   </header>
-  
+
 </body>
 
 </html>

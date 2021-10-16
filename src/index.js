@@ -1,11 +1,11 @@
-import { Swiper, Parallax, Mousewheel, Controller } from 'swiper';
+import { Swiper, Parallax, Mousewheel, Controller, Pagination } from 'swiper';
 
 import '../pages/normalize.css';
 import 'swiper/css/bundle';
 import 'swiper/css/parallax'
 import '../pages/index.css';
 
-Swiper.use([ Parallax, Mousewheel, Controller ]);
+Swiper.use([ Parallax, Mousewheel, Controller, Pagination ]);
 
 const swiperImg = new Swiper('.slider-img', {
   loop: false,
@@ -13,6 +13,10 @@ const swiperImg = new Swiper('.slider-img', {
   parallax: true,
   mousewheel: {
     invert: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });
 

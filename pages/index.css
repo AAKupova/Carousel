@@ -4,7 +4,7 @@
 
 	.root {
 	  background-color: #040404;
-	  font-family: Arial, Helvetica, s  ans-serif;
+	  font-family: Arial, Helvetica, sans-serif;
 	  margin: 0;
 	  padding: 0;
 	}
@@ -67,33 +67,25 @@
 	  border-bottom: 1px solid #FC1012;
 	}
 
-	.contacts {
-	  text-transform: uppercase;
-	  letter-spacing: .3em;
-	  font-size: 14px;
-	  font-weight: 500;
+	.info {
 	  display: flex;
 	  align-items: center;
 	}
 
-	.contacts__decoration {
+  .info__text {
+    text-transform: uppercase;
+	  letter-spacing: .3em;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+  } 
+
+	.info__decoration {
 	  height: 30px;
-	  border-right: 1px solid #979797;
+    border-right: 3px solid rgba(252, 16, 18, .5);
 	  display: inline-block;
-	  margin: 0 20px;
-	}
-
-	.contacts__info {
-	  margin-right: 10px;
-	  color: rgba(244, 244, 244, 0.5);
-	}
-
-	.contacts__telephone {
-	  color: #FC1012;
-	}
-
-	.contacts__address {
-	  color: rgba(244, 244, 244, .8);
+	  margin: 0 40px;
 	}
 
 	.menu-button-container {
@@ -109,6 +101,7 @@
 	  text-align: center;
 	  background-color: #040404;
 	  transition: .25s ease-in-out;
+    position: relative;
 	}
 
 	.button-burger:hover {
@@ -159,23 +152,41 @@
 	  flex: 0 0 70px;
 	  width: 100%;
 	  height: 70px;
+    background-color: #FC1012;
+    transition: .5s ease-in-out;
+	  cursor: pointer;
+    position: relative;
+
 	}
 
-	.sidebar__share-icon {
-	  background-color: #FC1012;
+	.botton-share {
 	  background-image: url(../images/Vector.svg);
 	  background-position: center;
 	  background-repeat: no-repeat;
 	  width: 100%;
 	  height: 100%;
-	  transition: .25s ease-in-out;
+	  transition: .5s ease-in-out;
 	  cursor: pointer;
+    position: relative;
+    z-index: 1;
 	}
 
-	.sidebar__share-icon:hover {
-	  background-color: transparent;
-	  border-right: 3px solid #FC1012;
-	}
+  .sidebar__bottom::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color:  #1B1B1B;
+    top: 0;
+    left: 0;
+    transition: width .5s ease-out;
+    box-sizing: border-box;
+   }
+ 
+ 	.sidebar__bottom:hover:before {
+     width: 100%;
+     border-right: 3px solid #FC1012;
+   }
 
 	.sidebar__social {
 	  flex-direction: column;
@@ -236,7 +247,7 @@
 	.slider {
 	  position: relative;
 	  overflow: hidden;
-	  width: calc(75% - 70px);
+	  width: 100%;
 	  height: 100%;
 	  top: 70px;
 	  left: 70px;
@@ -246,35 +257,148 @@
 	  flex-direction: row;
 	}
 
-	.slider__body,
-  .slider__swiper-wrapper,
-  .slider__swiper,
-  .slider__item {
-    width: 100%;
+  .slider-img,
+  .slider-conteiner {
+    width: calc(75% - 70px);
     height: 100%;
+    position: relative;
+    overflow: hidden;
   }
 
-  .slider__img {
-    width: 100%;
+  .slider-img__slide {
     height: 100%;
-    background-image: url(../космос.jpeg);
+    overflow: hidden;
+  }
+
+  .slider-img__bg {
+    height: 100%;
+    width: 100%;
     background-position: center;
     background-size: cover;
   }
+
+  .slider-img__bg_1 {
+    background-image: url(../images/Сатур.jpg);
+  }
+
+  .slider-img__bg_2 {
+    background-image: url(../images/Марс.jpg);
+  }
+
+  .slider-img__bg_3 {
+    background-image: url(../images/Солнце.jpg);
+  }
+
+  .slider-text {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: calc(100% - 70px);
+  }
+
+  .slider-text__slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .slider-text__content {
+    text-align: right;
+    padding-right: 22%;
+    position: relative;
+  }
+
+  .slider-text__decoraation {
+    height: 140px;
+    position: absolute;
+    top: 0;
+    right: 280px;
+    z-index: -1;
+    border-right: 10px solid #FC1012;
+  }
+
+  .slider-text__title {
+    text-transform: uppercase;
+    max-width: 760px;
+    line-height: 1.2;
+    font-size: 60px;
+    float: right;
+    margin: 0 0 20px 0;
+    color: rgba(244, 244, 244, .8);
+  }
+
+  .slider-text__title_color_red {
+    color:  #FC1012;
+    padding-right: 12px;
+  }
+
+  .slider-text__text {
+    float: right;
+    font-size: 14px;
+    max-width: 500px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .slider-text__button {
+    float: right;
+    clear: both;
+    margin-top: 30px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #FC1012;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    position: relative;
+    padding: 16px 28px;
+  }
+
+  .button::before {
+   content: '';
+   width: 0%;
+   height: 100%;
+   position: absolute;
+   background-color:  #1B1B1B;
+   top: 0;
+   left: 0;
+   transition: width .5s ease-out;
+  }
+
+  .button:hover:before {
+    width: 100%;
+    border-right: 3px solid #FC1012;
+  }
+
+  .button__text {
+    position: relative;
+    z-index: 2;
+  }
+
 	.slider__footer {
 	  position: absolute;
 	  bottom: 70px;
 	  left: 0;
-	  width: 100%;
+    width: calc(75% - 70px);
 	  height: 70px;
 	  display: flex;
 	  align-items: center;
-	  background-color: #1B1B1B;
+    z-index: 5;
 	}
 
 	.slider__share {
 	  flex: 0 1 auto;
+    background-color: #1B1B1B;
 	}
+
+  .hidden {
+    display: none;
+  }
 
 	.slider__pagination {
 	  flex: 0 0 140px;
@@ -289,6 +413,12 @@
 	}
 
   .swiper {
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
   }
+
+
+
+
+
+  

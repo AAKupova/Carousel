@@ -1,11 +1,19 @@
-import { Swiper, Parallax, Mousewheel, Controller, Pagination } from 'swiper';
+import {
+  Swiper,
+  Parallax,
+  Mousewheel,
+  Controller,
+  Pagination,
+  Scrollbar,
+  Navigation
+} from 'swiper';
 
 import '../pages/normalize.css';
 import 'swiper/css/bundle';
-import 'swiper/css/parallax'
+import 'swiper/css/parallax';
 import '../pages/index.css';
 
-Swiper.use([ Parallax, Mousewheel, Controller, Pagination ]);
+Swiper.use([Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation]);
 
 const swiperImg = new Swiper('.slider-img', {
   loop: false,
@@ -14,10 +22,7 @@ const swiperImg = new Swiper('.slider-img', {
   mousewheel: {
     invert: false,
   },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+
 });
 
 const swiperText = new Swiper('.slider-text', {
@@ -26,26 +31,35 @@ const swiperText = new Swiper('.slider-text', {
   mousewheel: {
     invert: false,
   },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 swiperImg.controller.control = swiperText;
 swiperText.controller.control = swiperImg;
 
-
-
-console.log(swiperImg, swiperText)
+console.log(swiperImg, swiperText);
 
 const buttonShare = document.querySelector('.botton-share');
 const blockShare = document.querySelector('.slider__share');
 
 buttonShare.addEventListener('click', () => {
-  if(blockShare.classList.contains('hidden')) {
+  if (blockShare.classList.contains('hidden')) {
     blockShare.classList.remove('hidden');
   } else {
     blockShare.classList.add('hidden');
   }
-
-})
+});
 
 // import lottie from 'lottie-web';
 

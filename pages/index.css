@@ -337,6 +337,7 @@
     font-size: 14px;
     max-width: 500px;
     line-height: 1.7;
+    letter-spacing: 1px;
     margin: 0;
   }
 
@@ -443,9 +444,54 @@
 	  flex: 1 0 0;
 	}
 
+  .swiper-scrollbar {
+    height: 1px;
+    background-color: rgba(244, 244, 244, .5);
+    position: relative;
+    cursor: pointer;
+  }
+
+ .swiper-scrollbar-drag {
+    height: 3px;
+    background-color: #FC1012;
+    position: absolute;
+    top: -1px;
+    cursor: pointer;
+ }
+
 	.slider__navigation {
 	  flex: 0 0 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	}
+
+  .swiper-button-conteiner {
+    width: 106px;
+    position: relative;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 35px;
+    height: 35px;
+    background-color: #1B1B1B;
+    border: 2px solid #FC1012;
+    border-radius: 100%;
+    color: #FC1012;
+    top: 4px;
+  }
+
+  .swiper-button-disabled {
+    opacity: 1;
+    border: 2px solid rgba(244, 244, 244, .5);
+    color: rgba(244, 244, 244, .5);
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 12px;
+  }
 
   .swiper {
     width: 100%;

@@ -402,7 +402,42 @@
 
 	.slider__pagination {
 	  flex: 0 0 140px;
+    display: flex;
+    align-items: center;
+    height: 70px;
 	}
+
+  .swiper-pagination{
+    position: sticky;
+    display: flex;
+    gap: 0 6px;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    background-color: #FC1012;
+    position: relative;
+  }
+
+  .swiper-pagination-bullet-active::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FC1012;
+    border-radius: 100%;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+  }
 
 	.slider__scrollbar {
 	  flex: 1 0 0;

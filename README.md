@@ -1,13 +1,8 @@
 # Pet-Проект Slider
 
-Pet-Проект: Первый экран сайта со слайдером
+Pet-Проект: Первый экран сайта со слайдером. 
 Реализациия слайдера, спомощью плагина swiper!
 ![Pet-Проект Slider](https://github.com/AAKupova/Carousel/raw/main/static/images/Slider.png)
-
-{username} — ваш ник на ГитХабе;
-{repository} — репозиторий где хранятся картинки;
-{branch} — ветка репозитория;
-{path} — путь к месту нахождения картинки.
 
 ---
 

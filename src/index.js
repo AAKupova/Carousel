@@ -8,10 +8,11 @@ import {
   Navigation
 } from 'swiper';
 
-import '../pages/normalize.css';
 import 'swiper/css/bundle';
 import 'swiper/css/parallax';
-import '../pages/index.css';
+
+import './styles/normalize.css';
+import './styles/index.css';
 
 Swiper.use([Parallax, Mousewheel, Controller, Pagination, Scrollbar, Navigation]);
 
@@ -48,8 +49,6 @@ const swiperText = new Swiper('.slider-text', {
 swiperImg.controller.control = swiperText;
 swiperText.controller.control = swiperImg;
 
-console.log(swiperImg, swiperText);
-
 const buttonShare = document.querySelector('.botton-share');
 const blockShare = document.querySelector('.slider__share');
 
@@ -61,11 +60,11 @@ buttonShare.addEventListener('click', () => {
   }
 });
 
+// Анимациия lottie!
 // import lottie from 'lottie-web';
-
 // import animation from './assets/animation.json';
 
-// const element = document.querySelector('.contacts');
+// const element = document.querySelector('.top-line');
 
 // lottie.loadAnimation({
 //     container: element, // the dom element that will contain the animation

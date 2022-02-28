@@ -110,7 +110,7 @@
 	}
 
 	.button-burger__img {
-	  background-image: url(../images/burger.svg);
+	  background-image: url(../../static/images/burger.svg);
 	  background-position: center;
 	  background-repeat: no-repeat;
 	  width: 100%;
@@ -137,7 +137,7 @@
 	}
 
 	.sidebar__decoration {
-	  background-image: url(../images/decor.svg);
+	  background-image: url(../../static/images/decor.svg);
 	  background-position: center;
 	  background-repeat: no-repeat;
 	  width: 100%;
@@ -160,7 +160,7 @@
 	}
 
 	.botton-share {
-	  background-image: url(../images/Vector.svg);
+	  background-image: url(../../static/images/Vector.svg);
 	  background-position: center;
 	  background-repeat: no-repeat;
 	  width: 100%;
@@ -278,15 +278,15 @@
   }
 
   .slider-img__bg_1 {
-    background-image: url(../images/Сатур.jpg);
+    background-image: url(../../static/images/Сатур.jpg);
   }
 
   .slider-img__bg_2 {
-    background-image: url(../images/Марс.jpg);
+    background-image: url(../../static/images/Марс.jpg);
   }
 
   .slider-img__bg_3 {
-    background-image: url(../images/Солнце.jpg);
+    background-image: url(../../static/images/Солнце.jpg);
   }
 
   .slider-text {
@@ -312,7 +312,7 @@
     height: 140px;
     position: absolute;
     top: 0;
-    right: 280px;
+    right: 260px;
     z-index: -1;
     border-right: 10px solid #FC1012;
   }
@@ -324,7 +324,7 @@
     font-size: 60px;
     float: right;
     margin: 0 0 20px 0;
-    color: rgba(244, 244, 244, .8);
+    color: #fff;
   }
 
   .slider-text__title_color_red {
